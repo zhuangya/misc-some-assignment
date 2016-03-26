@@ -71,3 +71,14 @@ cruiseApp.directive('agentDetail', function () {
     },
   };
 });
+
+cruiseApp.filter('shorty', function () {
+  return function (text, length) {
+    length = length || 10;
+    if (text.length > length) {
+      return text.slice(0, length) + '...';
+    }
+
+    return text;
+  };
+});

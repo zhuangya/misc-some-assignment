@@ -1,4 +1,4 @@
-<div class="agent-detail" ng-class="agent.status">
+<div class="clearfix agent-detail" ng-class="agent.status">
   <a href="#" class="avatar float-left">
     <img ng-src="{{agent.avatar}}" alt="avatar"/>
   </a>
@@ -15,7 +15,7 @@
       <div class="resource-list-wrapper">
         <span class="">Resources:</span>
         <ol class="clean-list resource-list">
-          <li ng-repeat="r in agent.resources track by $index" class="resource-list-item">{{r}} <button class="resource-op" ng-click="removeResource($index)">&times;</button></li>
+          <li ng-repeat="r in agent.resources track by $index" class="resource-list-item">{{r|shorty}} <button class="resource-op" ng-click="removeResource($index)">&times;</button></li>
         </ol>
       </div>
     </div>

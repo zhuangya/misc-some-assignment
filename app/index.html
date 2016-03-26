@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="cruiseApp">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components/panel.css" />
+    <link rel="stylesheet" href="css/components/popup.css" />
     <link rel="stylesheet" href="css/components/agent-detail.css" />
     <title>Cruise - ThoughtWorks</title>
   </head>
@@ -53,128 +54,10 @@
             <p>history ...</p>
             <p>history ...</p>
           </aside>
-          <div class="main">
-            <div class="agent-detail processing">
+          <div class="main" id="event-hunter" ng-controller="MainCtrl">
 
-              <a href="#" class="avatar float-left">
-                <img src="http://filldunphy.com/64/64" alt="avatar"/>
-              </a>
+            <agent-detail ng-repeat="ag in agents" agent="ag"></agent-detail>
 
-              <div class="info float-left">
-                <div>
-                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
-                  <span class="status">idle</span>
-                  <span class="ip">192.168.1.12</span>
-                  <span class="binary">/var/lib/cruise-agent</span>
-                </div>
-                <div>
-                  <a href="#">+ Specify Resources</a>
-                  <div class="resource-list-wrapper">
-                    <span class="">Resources:</span>
-                    <ol class="clean-list resource-list">
-                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="op float-right">
-                <strong>deny</strong>
-              </div>
-            </div>
-
-            <div class="agent-detail idle">
-
-              <a href="#" class="avatar float-left">
-                <img src="http://filldunphy.com/64/64" alt="avatar"/>
-              </a>
-
-              <div class="info float-left">
-                <div>
-                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
-                  <span class="status">idle</span>
-                  <span class="ip">192.168.1.12</span>
-                  <span class="binary">/var/lib/cruise-agent</span>
-                </div>
-                <div>
-                  <a href="#">+ Specify Resources</a>
-                  <div class="resource-list-wrapper">
-                    <span class="">Resources:</span>
-                    <ol class="clean-list resource-list">
-                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="op float-right">
-              </div>
-            </div>
-
-            <div class="agent-detail idle">
-
-              <a href="#" class="avatar float-left">
-                <img src="http://filldunphy.com/64/64" alt="avatar"/>
-              </a>
-
-              <div class="info float-left">
-                <div>
-                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
-                  <span class="status">idle</span>
-                  <span class="ip">192.168.1.12</span>
-                  <span class="binary">/var/lib/cruise-agent</span>
-                </div>
-                <div>
-                  <a href="#">+ Specify Resources</a>
-                  <div class="resource-list-wrapper">
-                    <span class="">Resources:</span>
-                    <ol class="clean-list resource-list">
-                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="op float-right">
-              </div>
-            </div>
-
-            <div class="agent-detail processing">
-
-              <a href="#" class="avatar float-left">
-                <img src="http://filldunphy.com/i/64/64" alt="avatar"/>
-              </a>
-
-              <div class="info float-left">
-                <div>
-                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
-                  <span class="status">idle</span>
-                  <span class="ip">192.168.1.12</span>
-                  <span class="binary">/var/lib/cruise-agent</span>
-                </div>
-                <div>
-                  <a href="#">+ Specify Resources</a>
-                  <div class="resource-list-wrapper">
-                    <span class="">Resources:</span>
-                    <ol class="clean-list resource-list">
-                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
-                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="op float-right">
-                <strong>deny</strong>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -182,5 +65,7 @@
         Copyright: Thoughtworks Inc.
       </footer>
     </div>
+    <script src="bower/angular/angular.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

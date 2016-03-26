@@ -1,0 +1,34 @@
+<div class="agent-detail" ng-class="agent.status">
+  <a href="#" class="avatar float-left">
+    <img ng-src="{{agent.avatar}}" alt="avatar"/>
+  </a>
+
+  <div class="info float-left">
+    <div>
+      <strong class="domain">{{agent.domain}}</strong>
+      <span class="status">{{agent.status}}</span>
+      <span class="ip">{{agent.ip}}</span>
+      <span class="binary">{{agent.binary}}</span>
+    </div>
+    <div>
+      <a class="specify-resources" href="#" ng-click="showAppendBox($event)">+ Specify Resources</a>
+      <div class="resource-list-wrapper">
+        <span class="">Resources:</span>
+        <ol class="clean-list resource-list">
+          <li ng-repeat="r in agent.resources track by $index" class="resource-list-item">{{r}} <button class="resource-op" ng-click="removeResource($index)">&times;</button></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="op float-right">
+    <strong>deny</strong>
+  </div>
+  <div class="popup" ng-show="appending" ng-style="popupPosition">
+    <div class="bubble">
+      <p class="note">(separate multiple resources name with commas)</p>
+      <input ng-model="resources" type="text">
+      <button class="btn-append" ng-click="appendResources(resources)">append</button>
+      <button class="btn-close" ng-click="appending=false">close</button>
+    </div>
+  </div>
+</div>

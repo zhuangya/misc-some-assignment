@@ -1,0 +1,19 @@
+{
+  "name": "thoughtworks-assignment",
+  "version": "0.0.1",
+  "description": "there is no spoon",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ya Zhuang <zhuangya@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

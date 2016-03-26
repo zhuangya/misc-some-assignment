@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components/panel.css" />
+    <link rel="stylesheet" href="css/components/agent-detail.css" />
     <title>Cruise - ThoughtWorks</title>
   </head>
   <body>
@@ -29,44 +30,157 @@
         <div class="filter container">
           <strong class="category">Agents</strong>
           <button class="btn-action">All</button>
-          <button class="btn-action">Physical</button>
+          <button class="btn-action focus">Physical</button>
           <button class="btn-action">Virtual</button>
         </div>
 
       </div>
 
-      <!-- <div class="panel-body"> -->
+      <div class="panel-body clearfix">
+        <div class="ground clearfix">
+          <aside class="sidebar">
+            <h3>summary</h3>
+            <hr>
+            <p>building 2</p>
+            <p>idle 2</p>
+            <h3>History</h3>
+            <hr>
+            <p>history ...</p>
+            <p>history ...</p>
+            <p>history ...</p>
+            <p>history ...</p>
+            <p>history ...</p>
+            <p>history ...</p>
+            <p>history ...</p>
+          </aside>
+          <div class="main">
+            <div class="agent-detail processing">
 
-      <!--   <div class="main"> -->
-      <!--     <div class="agent-detail"> -->
+              <a href="#" class="avatar float-left">
+                <img src="http://filldunphy.com/64/64" alt="avatar"/>
+              </a>
 
-      <!--       <div class="avatar float-left"> -->
-      <!--       </div> -->
+              <div class="info float-left">
+                <div>
+                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
+                  <span class="status">idle</span>
+                  <span class="ip">192.168.1.12</span>
+                  <span class="binary">/var/lib/cruise-agent</span>
+                </div>
+                <div>
+                  <a href="#">+ Specify Resources</a>
+                  <div class="resource-list-wrapper">
+                    <span class="">Resources:</span>
+                    <ol class="clean-list resource-list">
+                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="op float-right">
+                <strong>deny</strong>
+              </div>
+            </div>
 
-      <!--       <div class="info float-right"> -->
-      <!--         <p><span>bjstdmngbgr02.thoughtworks.com</span><span>idle</span><span>192.168.1.12</span><span>/var/lib/cruise-agent</span></p> -->
-      <!--         <p><a href="#">+ Specify Resources</a><span>Resources: ubuntu<i>&times;</i> firefox3 <i>&times;</i></p> -->
-      <!--       </div> -->
+            <div class="agent-detail idle">
 
-      <!--     </div> -->
-      <!--   </div> -->
+              <a href="#" class="avatar float-left">
+                <img src="http://filldunphy.com/64/64" alt="avatar"/>
+              </a>
 
-      <!--   <aside> -->
-      <!--     <h3>summary</h3> -->
-      <!--     <hr> -->
-      <!--     buidling 2 -->
-      <!--     idle 2 -->
-      <!--     <h3>History</h3> -->
-      <!--     <hr> -->
-      <!--     history ... -->
-      <!--   </aside> -->
-      <!-- </div> -->
+              <div class="info float-left">
+                <div>
+                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
+                  <span class="status">idle</span>
+                  <span class="ip">192.168.1.12</span>
+                  <span class="binary">/var/lib/cruise-agent</span>
+                </div>
+                <div>
+                  <a href="#">+ Specify Resources</a>
+                  <div class="resource-list-wrapper">
+                    <span class="">Resources:</span>
+                    <ol class="clean-list resource-list">
+                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="op float-right">
+              </div>
+            </div>
 
+            <div class="agent-detail idle">
+
+              <a href="#" class="avatar float-left">
+                <img src="http://filldunphy.com/64/64" alt="avatar"/>
+              </a>
+
+              <div class="info float-left">
+                <div>
+                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
+                  <span class="status">idle</span>
+                  <span class="ip">192.168.1.12</span>
+                  <span class="binary">/var/lib/cruise-agent</span>
+                </div>
+                <div>
+                  <a href="#">+ Specify Resources</a>
+                  <div class="resource-list-wrapper">
+                    <span class="">Resources:</span>
+                    <ol class="clean-list resource-list">
+                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="op float-right">
+              </div>
+            </div>
+
+            <div class="agent-detail processing">
+
+              <a href="#" class="avatar float-left">
+                <img src="http://filldunphy.com/i/64/64" alt="avatar"/>
+              </a>
+
+              <div class="info float-left">
+                <div>
+                  <strong class="domain">bjstdmngbgr02.thoughtworks.com</strong>
+                  <span class="status">idle</span>
+                  <span class="ip">192.168.1.12</span>
+                  <span class="binary">/var/lib/cruise-agent</span>
+                </div>
+                <div>
+                  <a href="#">+ Specify Resources</a>
+                  <div class="resource-list-wrapper">
+                    <span class="">Resources:</span>
+                    <ol class="clean-list resource-list">
+                      <li class="resource-list-item">ubuntu <button data-resource-id="1" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="2" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="3" class="resource-op">&times;</button></li>
+                      <li class="resource-list-item">ubuntu <button data-resource-id="4" class="resource-op">&times;</button></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="op float-right">
+                <strong>deny</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer>
         Copyright: Thoughtworks Inc.
       </footer>
-
     </div>
-
   </body>
 </html>

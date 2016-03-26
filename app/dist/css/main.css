@@ -1,0 +1,94 @@
+body
+{
+    font: 14px/1.4 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+    color: #333;
+    background-color: #abb;
+}
+
+a
+{
+    color: teal;
+}
+
+.wrapper
+{
+    overflow: auto;
+
+    min-width: 1024px;
+
+    background-color: rgba(233,233,233,.88);
+}
+
+/** oocss **/
+.clean-list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.clean-list li
+{
+    display: inline-block;
+}
+
+.pos-rel
+{
+    position: relative;
+}
+
+.pos-abs
+{
+    position: absolute;
+}
+
+.pos-top-right
+{
+    top: -100%;
+    right: 0;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.clearfix:before
+{
+    display: table;
+
+    content: '\0020';
+}
+
+.clearfix:after
+{
+    display: table;
+    clear: both;
+
+    content: '\0020';
+}
+
+.container
+{
+    padding: 10px 20px;
+}
+
+/** oocss end **/
+
+/** components **/
+.meta-toolbar
+{
+    font-size: 10px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+/** components end **/

@@ -1,0 +1,89 @@
+.panel-header
+{
+    overflow: hidden;
+
+    text-align: right;
+
+    color: white;
+}
+
+.panel-header ul.tabs
+{
+    margin-right: -2px;
+
+    border-bottom: 2px solid black;
+}
+
+.panel-header ul.tabs > li
+{
+    margin-bottom: -2px;
+}
+
+.panel-header ul.tabs > li > a
+{
+    display: block;
+
+    margin: 0 2px;
+    padding: 4px 8px;
+
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    background-color: #ddd;
+}
+
+.panel-header ul.tabs > li > a.active
+{
+    padding-top: 8px;
+
+    border-bottom: 2px solid #001f3f;
+    background-color: #001f3f;
+}
+
+.panel-body
+{
+    position: relative;
+
+    float: left;
+
+    width: 100%;
+
+    border-top: none;
+    background-color: #2ecc40;
+}
+
+.filter
+{
+    text-align: left;
+
+    border: 2px solid black;
+    border-top: none;
+    background-color: #001f3f;
+}
+
+.filter button.btn-action
+{
+    font-size: 12px;
+
+    display: inline-block;
+
+    height: 24px;
+    padding: 0 24px;
+
+    text-align: center;
+
+    color: #39cccc;
+    border: 1px solid #39cccc;
+    border-radius: 12px;
+    background: #39cccc;
+    background-color: transparent;
+}
+
+.filter button.btn-action.focus,
+.filter button.btn-action:focus
+{
+    color: white;
+    border-color: #ff4136;
+    outline: none;
+    background-color: #ff4136;
+}

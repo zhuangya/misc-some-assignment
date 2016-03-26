@@ -2,10 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components/panel.css" />
     <title>Cruise - ThoughtWorks</title>
   </head>
   <body>
-    <h1>Cruise</h1>
-    <script src="bundle.js"></script>
+    <div class="wrapper">
+      <div class="meta-toolbar">
+        <div class="float-right">
+          Sign in as <a href="#">Member</a>
+          <a href="#">Sign Out</a>
+        </div>
+      </div>
+
+      <h2>Cruise</h2>
+
+      <div class="panel-header clearfix">
+        <ul class="tabs clearfix clean-list">
+          <li class="panel-pill"><a href="#">DASHBOARD</a></li>
+          <li class="panel-pill"><a href="#">MY CRUISE</a></li>
+          <li class="active panel-pill"><a href="#" class="active">AGENTS</a></li>
+          <li class="panel-pill"><a href="#">HELP</a></li>
+        </ul>
+
+        <div class="filter container">
+          <strong class="category">Agents</strong>
+          <button class="btn-action">All</button>
+          <button class="btn-action">Physical</button>
+          <button class="btn-action">Virtual</button>
+        </div>
+
+      </div>
+
+      <!-- <div class="panel-body"> -->
+
+      <!--   <div class="main"> -->
+      <!--     <div class="agent-detail"> -->
+
+      <!--       <div class="avatar float-left"> -->
+      <!--       </div> -->
+
+      <!--       <div class="info float-right"> -->
+      <!--         <p><span>bjstdmngbgr02.thoughtworks.com</span><span>idle</span><span>192.168.1.12</span><span>/var/lib/cruise-agent</span></p> -->
+      <!--         <p><a href="#">+ Specify Resources</a><span>Resources: ubuntu<i>&times;</i> firefox3 <i>&times;</i></p> -->
+      <!--       </div> -->
+
+      <!--     </div> -->
+      <!--   </div> -->
+
+      <!--   <aside> -->
+      <!--     <h3>summary</h3> -->
+      <!--     <hr> -->
+      <!--     buidling 2 -->
+      <!--     idle 2 -->
+      <!--     <h3>History</h3> -->
+      <!--     <hr> -->
+      <!--     history ... -->
+      <!--   </aside> -->
+      <!-- </div> -->
+
+      <footer>
+        Copyright: Thoughtworks Inc.
+      </footer>
+
+    </div>
+
   </body>
 </html>

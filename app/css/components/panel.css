@@ -1,0 +1,56 @@
+.panel-header {
+  background-color: #3d9970;
+  color: white;
+  text-align: right;
+}
+
+.panel-header ul.tabs {
+  background-color: #ffdc00;
+  border-bottom: 2px solid black;
+}
+
+.panel-header ul.tabs > li {
+  margin-bottom: -2px;
+}
+
+.panel-header ul.tabs > li > a {
+  border: 2px solid black;
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+  background-color: #ff851b;
+  padding: 4px 8px;
+  display: block;
+  margin: 0 2px;
+}
+
+.panel-header ul.tabs > li > a.active {
+  background-color: #3d9970;
+  padding-top: 8px;
+  border-bottom: 2px solid #3d9970;
+}
+
+.filter {
+  text-align: left;
+  border: 2px solid black;
+  border-top: none;
+}
+
+.filter button.btn-action {
+  font-size: 12px;
+  background: #39cccc;
+  display: inline-block;
+  text-align: center;
+  padding: 0 24px;
+  height: 24px;
+  border-radius: 12px;
+  border: 1px solid #39cccc;
+  background-color: transparent;
+  color: #39cccc;
+}
+
+.filter button.btn-action:focus {
+  color: white;
+  background-color: #ff4136;
+  border-color: #FF4136;
+  outline: none;
+}

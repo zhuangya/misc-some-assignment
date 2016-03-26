@@ -1,0 +1,21 @@
+{
+  "name": "thoughtworks-assignment",
+  "description": "there is no spoon",
+  "main": "index.js",
+  "authors": [
+    "Ya Zhuang <zhuangya@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.0.0"
+  }
+}

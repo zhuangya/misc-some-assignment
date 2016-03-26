@@ -46,15 +46,17 @@
 }
 
 .main {
-  margin-right: 300px;
-  padding: 15px;
+  width: 71%;
+  left: 27%;
+  float: left;
+  position: relative;
 }
 
 aside.sidebar {
-  float: right;
-  width: 268px;
-  padding: 15px;
-  border-left: 2px solid black;
+  float: left;
+  position: relative;
+  left: 31%;
+  width: 21%;
 }
 
 .resource-list-wrapper {
@@ -87,4 +89,12 @@ button.resource-op {
   display: table-cell;
   vertical-align: middle;
   padding: 0;
+}
+
+.layout-wrapper {
+  right: 25%;
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: white;
 }

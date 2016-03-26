@@ -32,6 +32,10 @@
 .panel-body {
   border: 2px solid black;
   border-top: none;
+  background-color: #2ECC40;
+  float: left;
+  position: relative;
+  width: 100%;
 }
 
 .filter {

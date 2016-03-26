@@ -38,7 +38,12 @@
       </div>
 
       <div class="panel-body clearfix">
-        <div class="ground clearfix">
+        <div class="layout-wrapper clearfix">
+
+          <div class="main" id="event-hunter" ng-controller="MainCtrl">
+            <agent-detail ng-repeat="ag in agents" agent="ag"></agent-detail>
+          </div>
+
           <aside class="sidebar">
             <h3>summary</h3>
             <hr>
@@ -54,11 +59,6 @@
             <p>history ...</p>
             <p>history ...</p>
           </aside>
-          <div class="main" id="event-hunter" ng-controller="MainCtrl">
-
-            <agent-detail ng-repeat="ag in agents" agent="ag"></agent-detail>
-
-          </div>
         </div>
       </div>
       <footer>
